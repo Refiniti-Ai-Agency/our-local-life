@@ -20,3 +20,4 @@ _firebase-live-sync/
 .DS_Store
 *.log
 Thumbs.db
+_firebase-live-sync/

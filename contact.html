@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="light">
   <head>
     <script data-oll-theme-init="true">
@@ -352,7 +352,7 @@
           class="w-32 h-auto absolute opacity-0 pointer-events-none transition-opacity duration-300 transform scale-90 dark:invert"
         />
       </div>
-      <div class="flex-1 flex flex-col space-y-3 px-2 mt-2 overflow-y-auto">
+      <div class="flex-1 flex flex-col space-y-3 px-2 mt-2">
         <a
           href="index.html"
           class="nav-item flex items-center h-10 px-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-all group/item"
@@ -756,9 +756,9 @@
           <input
             type="text"
             name="firstName"
-            autocomplete="given-name"
-            placeholder="First Name"
-            aria-label="First name"
+            autocomplete="name"
+            placeholder="Full Name"
+            aria-label="Full name"
             class="w-full border-b border-gray-300 dark:border-white/20 p-2 focus:outline-none focus:border-oll-dark dark:focus:border-white bg-transparent text-sm"
           />
           <input
@@ -778,5 +778,7 @@
         </form>
       </div>
     </div>
-  </body>
+      <script src="/assets/data/ghl-config.js" data-oll-ghl-forms="1"></script>
+    <script src="/assets/js/ghl-forms.js" data-oll-ghl-forms="1"></script>
+</body>
 </html>

@@ -1,5 +1,17 @@
 export const curatedStories = [
   {
+    id: "tymbrea-mattox-the-power-of-perspective",
+    title: "Meet Tymbrea Mattox: The Power of Perspective",
+    description: "A curated story and interview transcript with Tymbrea Mattox.",
+    image:
+      "/assets/image/meet-tymbrea-mattox-the-power-of-perspective-banner.webp",
+    url: "/pages/stories/tymbrea-mattox-the-power-of-perspective.html",
+    category: "mind",
+    label: "Mind",
+    cta: "Read story",
+    date: "2026-11-11",
+  },
+  {
     id: "the-practice-of-presence-inside-atmas-approach-to-healing",
     title: "Meet Atma Erice: The Practice of Presence",
     description:
@@ -36,8 +48,8 @@ export const curatedStories = [
   },
   {
     id: "linking-the-body-demarius-parker",
-    title: "Meet Demarius Parker: Linking the Body",
-    description: "A curated story and interview transcript with Demarius Parker.",
+    title: "Meet De’Maris Parker: Linking the Body",
+    description: "A curated story and interview transcript with De’Maris Parker.",
     image: "/assets/image/Linking-the-Body-A-Conversation-with-Demarius-Parker.webp",
     url: "/pages/stories/linking-the-body-demarius-parker.html",
     category: "body",
@@ -72,6 +84,17 @@ export const curatedStories = [
 
 export const entrepreneurs = [
   {
+    id: "tymbrea-mattox-from-my-perspective",
+    name: "Tymbrea Mattox",
+    pillar: "mind",
+    archetype: "The Perspective Guide",
+    description:
+      "A high-vibe editorial profile celebrating Tymbrea Mattox, creator of From My Perspective.",
+    image: "/assets/image/tymbrea-mattox-from-my-perspective.webp",
+    url: "/pages/spotlight/tymbrea-mattox-from-my-perspective.html",
+    date: "2026-11-11",
+  },
+  {
     id: "dustin-defrates-builder-of-people-places-purpose",
     name: "Dustin DeFrates",
     pillar: "mind",
@@ -104,11 +127,11 @@ export const entrepreneurs = [
   },
   {
     id: "demarius-parker-body-whisperer",
-    name: "Demarius Parker",
+    name: "De’Maris Parker",
     pillar: "body",
     archetype: "The Linker",
     description:
-      "An editorial spotlight on Demarius Parker, the Body lead in the Mind Body Soul collective.",
+      "An editorial spotlight on De’Maris Parker, the Body lead in the Mind Body Soul collective.",
     image: "/assets/image/Demarius-Parker-The-Linker-Our-local-life.webp",
     url: "/pages/spotlight/demarius-parker-body-whisperer.html",
     date: "2026-01-19",

@@ -31,6 +31,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ourlocallife.com/pages/stories/tymbrea-mattox-the-power-of-perspective.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ourlocallife.com/pages/stories/dustin-defrates-building-people-places-purpose.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -62,6 +67,11 @@
   </url>
   <url>
     <loc>https://ourlocallife.com/pages/spotlight/lai-lam-resumate-intentional-dating.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ourlocallife.com/pages/spotlight/tymbrea-mattox-from-my-perspective.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

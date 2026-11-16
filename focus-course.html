@@ -319,7 +319,7 @@
           class="w-32 h-auto absolute opacity-0 pointer-events-none transition-opacity duration-300 transform scale-90 dark:invert"
         />
       </div>
-      <div class="flex-1 flex flex-col space-y-3 px-2 mt-2 overflow-y-auto">
+      <div class="flex-1 flex flex-col space-y-3 px-2 mt-2">
         <a
           href="index.html"
           class="nav-item flex items-center h-10 px-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-all group/item"
@@ -655,7 +655,7 @@
         <p class="text-sm opacity-70 mb-6">
           Enter your name and email to open the course page and download the full curriculum as a PDF.
         </p>
-        <form id="course-optin-form" class="space-y-4" onsubmit="submitCourseOptIn(event)">
+        <form id="course-optin-form" class="space-y-4" data-oll-form="focus_course">
           <div>
             <label for="course-name" class="block text-xs uppercase tracking-widest opacity-60 mb-1">Name</label>
             <input
@@ -706,23 +706,11 @@
           modal.classList.add("hidden-modal");
         }
       }
-      function submitCourseOptIn(e) {
-        e.preventDefault();
-        const form = document.getElementById("course-optin-form");
-        const name = form?.querySelector('[name="name"]')?.value || "";
-        const email = form?.querySelector('[name="email"]')?.value || "";
-        if (name && email) {
-          try {
-            sessionStorage.setItem("focusCourseName", name);
-            sessionStorage.setItem("focusCourseEmail", email);
-          } catch (err) {}
-          window.location.href = "focus-course-content.html";
-        }
-      }
       window.openCourseOptIn = openCourseOptIn;
       window.closeCourseOptIn = closeCourseOptIn;
-      window.submitCourseOptIn = submitCourseOptIn;
     </script>
       <script type="module" src="assets/js/main.js"></script>
-  </body>
+      <script src="/assets/data/ghl-config.js" data-oll-ghl-forms="1"></script>
+    <script src="/assets/js/ghl-forms.js" data-oll-ghl-forms="1"></script>
+</body>
 </html>
