@@ -45,6 +45,7 @@ const CATEGORY = {
 };
 const DATE = {
   "tymbrea-mattox-the-power-of-perspective": "2026-11-11",
+  "tymbrea-mattox-from-my-perspective": "2026-11-11",
 };
 
 const log = (...a) => console.log("•", ...a);
@@ -142,43 +143,51 @@ for (const b of bundles) {
   let sClose = matchBracket(s, sOpen);
   let storiesSrc = s.slice(sOpen, sClose + 1);
 
-  // add missing story pages
-  const additions = [];
-  for (const f of storyFiles) {
-    const url = `/pages/stories/${f}`;
-    if (storiesSrc.includes(url)) continue;
-    const id = f.replace(/\.html$/, "");
-    const meta = metaFromPage(path.join(storyDir, f));
-    if (!meta.title) continue;
+  // add story pages / spotlight pages that exist on disk but are missing from the lists
+  function addMissing(anchorId, dir, build) {
+    const at = s.indexOf(`id:"${anchorId}"`);
+    if (at === -1) return { name: null };
+    const open = enclosingArray(s, at);
+    const nm = s.slice(Math.max(0, open - 20), open).match(/([A-Za-z_$][\w$]*)=$/);
+    const close = matchBracket(s, open);
+    const src = s.slice(open, close + 1);
+    const full = path.join(root, dir);
+    const files = fs.existsSync(full) ? fs.readdirSync(full).filter((f) => f.endsWith(".html")) : [];
+    const adds = [];
+    for (const f of files) {
+      const url = `/${dir}/${f}`;
+      const fid = f.replace(/\.html$/, "");
+      if (src.includes(url) || src.includes(`"${fid}"`)) continue;
+      const meta = metaFromPage(path.join(full, f));
+      if (!meta.title) continue;
+      adds.push(build(f.replace(/\.html$/, ""), url, meta));
+    }
+    if (adds.length) {
+      const lit = adds
+        .map((e) => "{" + Object.entries(e).map(([k, v]) => `${k}:${JSON.stringify(v)}`).join(",") + "}")
+        .join(",");
+      s = s.slice(0, open + 1) + lit + "," + s.slice(open + 1);
+      log(b, `— added to ${dir}:`, adds.map((a) => a.id).join(", "));
+    }
+    return { name: nm && nm[1] };
+  }
+
+  addMissing("linking-the-body-demarius-parker", "pages/stories", (id, url, meta) => {
     const cat = CATEGORY[id] || "community";
-    const entry = {
-      id,
-      title: meta.title,
-      description: meta.description,
-      image: meta.image,
-      url,
-      category: cat,
-      label: cat[0].toUpperCase() + cat.slice(1),
-      cta: "Read story",
+    return {
+      id, title: meta.title, description: meta.description, image: meta.image, url,
+      category: cat, label: cat[0].toUpperCase() + cat.slice(1), cta: "Read story",
       date: DATE[id] || new Date().toISOString().slice(0, 10),
     };
-    additions.push(entry);
-  }
-  if (additions.length) {
-    const lit = additions
-      .map(
-        (e) =>
-          "{" +
-          Object.entries(e)
-            .map(([k, v]) => `${k}:${JSON.stringify(v)}`)
-            .join(",") +
-          "}"
-      )
-      .join(",");
-    s = s.slice(0, sOpen + 1) + lit + "," + s.slice(sOpen + 1);
-    log(b, "— added stories:", additions.map((a) => a.id).join(", "));
-    sClose = matchBracket(s, sOpen);
-  }
+  });
+  const ent = addMissing("demarius-parker-body-whisperer", "pages/spotlight", (id, url, meta) => {
+    const name = (meta.title.match(/^Meet\s+([^:|–-]+)/i) || [, meta.title])[1].trim();
+    return {
+      id, name, pillar: "community", archetype: "", description: meta.description,
+      image: meta.image, url, date: DATE[id] || new Date().toISOString().slice(0, 10),
+    };
+  });
+  const entVar = ent.name;
 
   // blog array: the one holding blog-demarius-body (skip if already generated)
   const bIdx = s.indexOf('id:"blog-demarius-body"');
@@ -194,10 +203,16 @@ for (const b of bundles) {
     const re = /description:"((?:[^"\\]|\\.)*)"[^}]*?storyUrl:"([^"]+)"/g;
     let m;
     while ((m = re.exec(oldBlog))) descs[m[2]] = JSON.parse('"' + m[1] + '"');
-    const gen =
+    const D = JSON.stringify(descs);
+    const fromStories =
       `${storiesVar}.filter(s=>s&&s.url&&!s.placeholder).map(s=>({id:"blog-"+s.id,title:s.title,` +
-      `description:(${JSON.stringify(descs)})[s.url]||s.description,image:s.image,url:s.url,storyUrl:s.url,date:s.date}))` +
-      `.sort((a,b)=>(b.date||"").localeCompare(a.date||""))`;
+      `description:(${D})[s.url]||s.description,image:s.image,url:s.url,storyUrl:s.url,date:s.date}))`;
+    // people who only have a spotlight page (no story yet) still get a card
+    const fromSpotlight = entVar
+      ? `,...${entVar}.filter(e=>e&&e.url&&e.name&&!${storiesVar}.some(s=>(s.title||"").includes(e.name))).map(e=>({id:"blog-"+e.id,` +
+        `title:"Meet "+e.name+(e.archetype?": "+e.archetype:""),description:e.description,image:e.image,url:e.url,storyUrl:e.url,date:e.date}))`
+      : "";
+    const gen = `[...${fromStories}${fromSpotlight}].sort((a,b)=>(b.date||"").localeCompare(a.date||""))`;
     s = s.slice(0, bOpen) + gen + s.slice(bClose + 1);
     log(b, `— blog list (${bName && bName[1]}) now generated from stories (${storiesVar})`);
   }
