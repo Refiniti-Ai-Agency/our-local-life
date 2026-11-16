@@ -6,77 +6,77 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/about</loc>
+    <loc>https://ourlocallife.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/curated-stories</loc>
+    <loc>https://ourlocallife.com/curated-stories.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/stories/meet-chris-wuehr-mind-body-connection</loc>
+    <loc>https://ourlocallife.com/pages/stories/meet-chris-wuehr-mind-body-connection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/stories/linking-the-body-demarius-parker</loc>
+    <loc>https://ourlocallife.com/pages/stories/linking-the-body-demarius-parker.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/stories/intentional-dating-resumate-lai-lam</loc>
+    <loc>https://ourlocallife.com/pages/stories/intentional-dating-resumate-lai-lam.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/stories/dustin-defrates-building-people-places-purpose</loc>
+    <loc>https://ourlocallife.com/pages/stories/dustin-defrates-building-people-places-purpose.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/stories/restoring-the-soil-with-christina-kat-cat</loc>
+    <loc>https://ourlocallife.com/pages/stories/restoring-the-soil-with-christina-kat-cat.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/stories/the-practice-of-presence-inside-atmas-approach-to-healing</loc>
+    <loc>https://ourlocallife.com/pages/stories/the-practice-of-presence-inside-atmas-approach-to-healing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/featured-entrepreneur</loc>
+    <loc>https://ourlocallife.com/featured-entrepreneur.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/spotlight/chris-wuehr-mind-body-connection</loc>
+    <loc>https://ourlocallife.com/pages/spotlight/chris-wuehr-mind-body-connection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/spotlight/demarius-parker-body-whisperer</loc>
+    <loc>https://ourlocallife.com/pages/spotlight/demarius-parker-body-whisperer.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/spotlight/lai-lam-resumate-intentional-dating</loc>
+    <loc>https://ourlocallife.com/pages/spotlight/lai-lam-resumate-intentional-dating.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/spotlight/dustin-defrates-builder-of-people-places-purpose</loc>
+    <loc>https://ourlocallife.com/pages/spotlight/dustin-defrates-builder-of-people-places-purpose.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/spotlight/christina-kat-cat-sapropel-organics</loc>
+    <loc>https://ourlocallife.com/pages/spotlight/christina-kat-cat-sapropel-organics.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/spotlight/atma-practice-of-presence</loc>
+    <loc>https://ourlocallife.com/pages/spotlight/atma-practice-of-presence.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -101,96 +101,66 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/focus-course</loc>
+    <loc>https://ourlocallife.com/focus-course.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast</loc>
+    <loc>https://ourlocallife.com/pages/podcast/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast/break-the-loop-where-your-energy-is-actually-leaking</loc>
+    <loc>https://ourlocallife.com/pages/podcast/break-the-loop-where-your-energy-is-actually-leaking.html</loc>
     <lastmod>2026-06-10</lastmod>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast/biblical-wisdom-meets-energetic-spirituality</loc>
+    <loc>https://ourlocallife.com/pages/podcast/biblical-wisdom-meets-energetic-spirituality.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast/you-cant-think-your-way-out-of-a-deficient-body</loc>
+    <loc>https://ourlocallife.com/pages/podcast/you-cant-think-your-way-out-of-a-deficient-body.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast/you-dont-need-more-control-you-need-better-resets</loc>
+    <loc>https://ourlocallife.com/pages/podcast/you-dont-need-more-control-you-need-better-resets.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast/youre-not-thinking-wrong-youre-out-of-alignment</loc>
+    <loc>https://ourlocallife.com/pages/podcast/youre-not-thinking-wrong-youre-out-of-alignment.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/podcast/youre-not-tired-your-energy-is-leaking</loc>
+    <loc>https://ourlocallife.com/pages/podcast/youre-not-tired-your-energy-is-leaking.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/blog</loc>
+    <loc>https://ourlocallife.com/blog.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/blog/restoring-the-soil-with-kat-cat</loc>
+    <loc>https://ourlocallife.com/pages/blog/youre-not-tired-your-energy-is-leaking.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/blog/meet-dustin-defrates-builder-of-people-places-purpose</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ourlocallife.com/blog/meet-chris-wuehr-mind-body-connection</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ourlocallife.com/blog/meet-demarius-parker-linking-the-body</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ourlocallife.com/blog/meet-atma-erice-the-practice-of-presence</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ourlocallife.com/blog/meet-lai-lam-intentional-dating-resumate</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ourlocallife.com/blog/youre-not-tired-your-energy-is-leaking</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ourlocallife.com/magazine/january-issue</loc>
+    <loc>https://ourlocallife.com/pages/magazine/january-issue.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/press-kit</loc>
+    <loc>https://ourlocallife.com/press-kit.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/contact</loc>
+    <loc>https://ourlocallife.com/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -200,47 +170,47 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/pretty-salon</loc>
+    <loc>https://ourlocallife.com/pages/hub/pretty-salon.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/the-bloguettes</loc>
+    <loc>https://ourlocallife.com/pages/hub/the-bloguettes.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/mayor-jim-lane-interview</loc>
+    <loc>https://ourlocallife.com/pages/hub/mayor-jim-lane-interview.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/el-hefe-whiskey-row</loc>
+    <loc>https://ourlocallife.com/pages/hub/el-hefe-whiskey-row.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/scottsdale-events-calendar</loc>
+    <loc>https://ourlocallife.com/pages/hub/scottsdale-events-calendar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/metropolis-ryan-rinaldo</loc>
+    <loc>https://ourlocallife.com/pages/hub/metropolis-ryan-rinaldo.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/the-toasted-cork</loc>
+    <loc>https://ourlocallife.com/pages/hub/the-toasted-cork.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/cactus-crossfit</loc>
+    <loc>https://ourlocallife.com/pages/hub/cactus-crossfit.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ourlocallife.com/hub/metropolis-giveaway-about-oll</loc>
+    <loc>https://ourlocallife.com/pages/hub/metropolis-giveaway-about-oll.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -69,6 +69,68 @@
         "source": "/hub",
         "destination": "/hub.html"
       }
+    ],
+    "redirects": [
+      {
+        "source": "/pages/blog/meet-atma-erice-the-practice-of-presence.html",
+        "destination": "/pages/stories/the-practice-of-presence-inside-atmas-approach-to-healing.html",
+        "type": 301
+      },
+      {
+        "source": "/blog/meet-atma-erice-the-practice-of-presence",
+        "destination": "/pages/stories/the-practice-of-presence-inside-atmas-approach-to-healing.html",
+        "type": 301
+      },
+      {
+        "source": "/pages/blog/meet-dustin-defrates-builder-of-people-places-purpose.html",
+        "destination": "/pages/stories/dustin-defrates-building-people-places-purpose.html",
+        "type": 301
+      },
+      {
+        "source": "/blog/meet-dustin-defrates-builder-of-people-places-purpose",
+        "destination": "/pages/stories/dustin-defrates-building-people-places-purpose.html",
+        "type": 301
+      },
+      {
+        "source": "/pages/blog/meet-lai-lam-intentional-dating-resumate.html",
+        "destination": "/pages/stories/intentional-dating-resumate-lai-lam.html",
+        "type": 301
+      },
+      {
+        "source": "/blog/meet-lai-lam-intentional-dating-resumate",
+        "destination": "/pages/stories/intentional-dating-resumate-lai-lam.html",
+        "type": 301
+      },
+      {
+        "source": "/pages/blog/restoring-the-soil-with-kat-cat.html",
+        "destination": "/pages/stories/restoring-the-soil-with-christina-kat-cat.html",
+        "type": 301
+      },
+      {
+        "source": "/blog/restoring-the-soil-with-kat-cat",
+        "destination": "/pages/stories/restoring-the-soil-with-christina-kat-cat.html",
+        "type": 301
+      },
+      {
+        "source": "/pages/blog/meet-demarius-parker-linking-the-body.html",
+        "destination": "/pages/stories/linking-the-body-demarius-parker.html",
+        "type": 301
+      },
+      {
+        "source": "/blog/meet-demarius-parker-linking-the-body",
+        "destination": "/pages/stories/linking-the-body-demarius-parker.html",
+        "type": 301
+      },
+      {
+        "source": "/pages/blog/meet-chris-wuehr-mind-body-connection.html",
+        "destination": "/pages/stories/meet-chris-wuehr-mind-body-connection.html",
+        "type": 301
+      },
+      {
+        "source": "/blog/meet-chris-wuehr-mind-body-connection",
+        "destination": "/pages/stories/meet-chris-wuehr-mind-body-connection.html",
+        "type": 301
+      }
     ]
   }
 }
