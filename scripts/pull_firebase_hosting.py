@@ -43,6 +43,8 @@ EXTRA_SEEDS = [
     "sitemap.xml",
     "assets/main-CJuVpVQo.js",
     "assets/main-DBjioDFf.css",
+    "pages/blog/index.html",
+    "pages/stories/tymbrea-mattox-the-power-of-perspective.html",
 ]
 
 
@@ -93,6 +95,11 @@ def normalize_path(raw: str) -> str | None:
 def extract_refs(text: str) -> set[str]:
     found: set[str] = set()
     for match in REF_RE.finditer(text):
+        norm = normalize_path(match.group(1))
+        if norm:
+            found.add(norm)
+    # paths that only appear inside JS/JSON strings (story cards, images, videos)
+    for match in re.finditer(r'["\'`](/?(?:pages|assets)/[^"\'`\s]+?\.(?:html|js|css|json|webp|jpe?g|png|gif|svg|mp4|webm|mp3|pdf|ico|woff2?))["\'`]', text):
         norm = normalize_path(match.group(1))
         if norm:
             found.add(norm)
